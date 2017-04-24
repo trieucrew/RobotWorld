@@ -14,6 +14,7 @@ public class World {
     this.grid = new int[WORLD_WIDTH][WORLD_HEIGHT];
   }
 
+  /** initialize the world with 1 representing the robot's position **/
   public void createWorld (int robotX, int robotY){
     for (int i = 0; i < WORLD_WIDTH; i++){
       for (int j = 0; j < WORLD_HEIGHT; j++){

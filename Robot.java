@@ -19,6 +19,7 @@ public class Robot{
     this.orientation = orientation;
   }
 
+  /** N-0, E-1, S-2, W-3 **/
   void updatePos(int move){
     switch(move){
       case -1:  orientation = (orientation + 3) % 4;
@@ -51,6 +52,7 @@ public class Robot{
                         "\nOrientation: " + directions[2*orientation]);
   }
 
+  /** GETTER AND SETTER METHODS **/
   public int getX(){
     return x_pos;
   }
